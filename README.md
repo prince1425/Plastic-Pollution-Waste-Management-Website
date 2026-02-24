@@ -9,11 +9,9 @@ plastic-pollution-site/
 ├── index.html          ← Home page (The Problem)
 ├── solutions.html      ← Solutions & Waste Management page
 ├── contact.html        ← Get Involved / Survey / Contact page
-├── css/
-│   └── style.css       ← External stylesheet (all styling)
-├── media/
-│   ├── ocean-plastic.mp4      ← (Add your video file here)  
-│   ├── plastic-expert.mp3     ← (Add your audio file here)
+├── style.css       ← External stylesheet (all styling)
+├── ocean-plastic.mp4      ← (Add your video file here)  
+├── plastic-expert.mp3     ← (Add your audio file here)
 └── README.md
 ```
 
@@ -51,7 +49,7 @@ plastic-pollution-site/
 ### ✅ Multimedia
 - [x] `<video>` element with multiple sources (mp4/webm) + fallback text
 - [x] `<audio>` element with multiple sources (mp3/ogg) + fallback text
-- Note: Place your media files in the `/media/` folder with filenames as listed above
+
 
 ### ✅ CSS Styling (external stylesheet: css/style.css)
 - [x] Background styling: gradient backgrounds, image backgrounds, radial gradients
