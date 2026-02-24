@@ -12,10 +12,8 @@ plastic-pollution-site/
 ├── css/
 │   └── style.css       ← External stylesheet (all styling)
 ├── media/
-│   ├── ocean-plastic.mp4      ← (Add your video file here)
-│   ├── ocean-plastic.webm     ← (Add .webm version here)
+│   ├── ocean-plastic.mp4      ← (Add your video file here)  
 │   ├── plastic-expert.mp3     ← (Add your audio file here)
-│   └── plastic-expert.ogg     ← (Add .ogg version here)
 └── README.md
 ```
 
