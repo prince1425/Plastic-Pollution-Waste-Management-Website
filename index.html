@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about plastic pollution, its devastating impact on our oceans and ecosystems, and discover actionable waste management solutions." />
+  <title>PlasticFree Earth &mdash; Plastic Pollution &amp; Waste Management</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <div class="logo-icon">&#9875;</div>
+        PlasticFree Earth
+      </a>
+
+      <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="has-dropdown">
+            <a href="index.html#problem">The Problem</a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#problem">Overview</a></li>
+              <li><a href="index.html#statistics">Key Statistics</a></li>
+              <li><a href="index.html#types">Types of Plastic</a></li>
+              <li><a href="index.html#impact">Environmental Impact</a></li>
+            </ul>
+          </li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="contact.html">Get Involved</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">&#9888; Global Crisis</div>
+      <h1>Our Oceans Are<br /><span>Drowning in Plastic</span></h1>
+      <p class="hero-subtitle">
+        Every year, millions of tons of plastic waste enter our oceans.
+        It&rsquo;s time to understand the crisis &mdash; and act.
+      </p>
+      <div class="hero-cta">
+        <a href="#problem" class="btn btn-primary">&#8595; Learn More</a>
+        <a href="solutions.html" class="btn btn-outline">Explore Solutions</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">400M</span>
+          <span class="stat-label">Tons produced yearly</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">8M</span>
+          <span class="stat-label">Tons enter oceans annually</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">9%</span>
+          <span class="stat-label">Of all plastic recycled</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">450yr</span>
+          <span class="stat-label">To decompose a bottle</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave shape -->
+    <div class="wave-shape">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style="height:80px;">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#0a1628"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- PROBLEM OVERVIEW -->
+    <section id="problem">
+      <div class="section-header">
+        <span class="section-label">The Crisis</span>
+        <h2>Understanding Plastic Pollution</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="two-col wide-left">
+        <article>
+          <p>
+            Plastic pollution is one of the most pressing environmental challenges of our time.
+            Since mass plastic production began in the 1950s, humanity has generated over
+            <strong>9.2 billion tons</strong> of plastic waste &mdash; and only a tiny fraction
+            has been recycled or properly disposed of.
+          </p>
+          <p>
+            Plastics persist in the environment for <em>centuries</em>, breaking down into
+            microscopic fragments called <strong>microplastics</strong> that infiltrate soil,
+            water, and even the air we breathe. These particles have been detected in human
+            blood, breast milk, and placentas.
+          </p>
+          <p>
+            The problem is accelerating: global plastic production is projected to
+            <strong>triple by 2060</strong> if no action is taken. Meanwhile, marine ecosystems,
+            wildlife, and human health face mounting threats from this synthetic tide.
+          </p>
+
+          <div class="info-box warning">
+            <strong>&#9888; Did You Know?</strong> A garbage truck&rsquo;s worth of plastic
+            enters the ocean <em>every single minute</em>. At current rates, there will be
+            more plastic than fish in the oceans by 2050.
+          </div>
+
+          <p>
+            Addressing plastic pollution requires action at every level: individual habits,
+            corporate responsibility, and sweeping policy reform. The good news&thinsp;&mdash;&thinsp;solutions exist,
+            and communities worldwide are already proving that change is possible.
+          </p>
+        </article>
+
+        <aside>
+          <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600" alt="Plastic waste littering a beach" loading="lazy" />
+            <p class="img-caption">Plastic debris accumulates on beaches worldwide, harming wildlife and ecosystems.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- TYPES OF PLASTIC -->
+    <section id="types">
+      <div class="section-header">
+        <span class="section-label">Know Your Plastic</span>
+        <h2>Types of Plastic &amp; Their Dangers</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <p style="text-align:center; color:rgba(255,255,255,0.7); max-width:600px; margin: 0 auto 3rem;">
+        Not all plastics are equal. Understanding resin identification codes helps
+        consumers make smarter choices and understand recyclability.
+      </p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <span class="card-icon">&#9312;</span>
+          <h3>PET &mdash; Polyethylene Terephthalate</h3>
+          <p>Common in water bottles and food containers. Widely recyclable but often ends up in landfills. Contains antimony, a potential carcinogen.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon">&#9313;</span>
+          <h3>HDPE &mdash; High&hyphen;Density Polyethylene</h3>
+          <p>Used in milk jugs and shampoo bottles. One of the safer, more recyclable plastics &mdash; but still contributes to pollution when not disposed properly.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon">&#9315;</span>
+          <h3>LDPE &mdash; Low&hyphen;Density Polyethylene</h3>
+          <p>Found in plastic bags, wraps, and squeeze bottles. Rarely accepted in curbside recycling and is a major ocean pollutant.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon">&#9316;</span>
+          <h3>PP &mdash; Polypropylene</h3>
+          <p>Used in yogurt containers and bottle caps. Moderately recyclable, but microplastic shedding poses risks to marine organisms.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon">&#9317;</span>
+          <h3>PS &mdash; Polystyrene (Styrofoam)</h3>
+          <p>Extremely difficult to recycle and highly persistent. Breaks into tiny beads that are ingested by marine animals at an alarming rate.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon">&#9314;</span>
+          <h3>PVC &mdash; Polyvinyl Chloride</h3>
+          <p>Used in pipes, flooring, and packaging. Releases toxic dioxins when manufactured or burned. Considered one of the most environmentally hazardous plastics.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- STATISTICS TABLE -->
+    <section id="statistics">
+      <div class="section-header">
+        <span class="section-label">Data &amp; Facts</span>
+        <h2>Plastic Pollution by the Numbers</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <caption class="table-caption">Global Plastic Waste Data &mdash; Source: UN Environment Programme, 2023</caption>
+          <thead>
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Annual Amount</th>
+              <th scope="col">% of Total</th>
+              <th scope="col">Trend</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Plastic produced globally</td>
+              <td>400 million tons</td>
+              <td>100%</td>
+              <td>&#8593; Increasing</td>
+            </tr>
+            <tr>
+              <td>Plastic recycled</td>
+              <td>36 million tons</td>
+              <td>9%</td>
+              <td>&#8594; Stagnant</td>
+            </tr>
+            <tr>
+              <td>Plastic incinerated</td>
+              <td>72 million tons</td>
+              <td>18%</td>
+              <td>&#8593; Increasing</td>
+            </tr>
+            <tr class="highlight">
+              <td>Plastic entering oceans</td>
+              <td>8&ndash;12 million tons</td>
+              <td>2&ndash;3%</td>
+              <td>&#8593; Rapidly increasing</td>
+            </tr>
+            <tr>
+              <td>Plastic in landfills / environment</td>
+              <td>292 million tons</td>
+              <td>73%</td>
+              <td>&#8593; Increasing</td>
+            </tr>
+            <tr>
+              <td>Single-use plastic produced</td>
+              <td>~130 million tons</td>
+              <td>32.5%</td>
+              <td>&#8593; Increasing</td>
+            </tr>
+            <tr>
+              <td>Plastic packaging produced</td>
+              <td>~146 million tons</td>
+              <td>36.5%</td>
+              <td>&#8593; Increasing</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Top Polluting Countries Table -->
+      <div class="table-wrapper" style="margin-top:2rem;">
+        <table>
+          <caption class="table-caption">Top Plastic Polluting Countries &mdash; Ocean Plastic Input (kg/person/year)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Rank</th>
+              <th scope="col">Country</th>
+              <th scope="col">Ocean Plastic Input</th>
+              <th scope="col">Annual Total (tons)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Philippines</td><td>2.7 kg/person</td><td>356,371</td></tr>
+            <tr><td>2</td><td>India</td><td>0.6 kg/person</td><td>126,513</td></tr>
+            <tr><td>3</td><td>Malaysia</td><td>3.1 kg/person</td><td>73,098</td></tr>
+            <tr><td>4</td><td>China</td><td>0.1 kg/person</td><td>70,707</td></tr>
+            <tr><td>5</td><td>Indonesia</td><td>0.2 kg/person</td><td>56,334</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ENVIRONMENTAL IMPACT -->
+    <section id="impact">
+      <div class="section-header">
+        <span class="section-label">Consequences</span>
+        <h2>Environmental &amp; Health Impacts</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <h3>&#127758; Marine Life Threats</h3>
+          <ul class="styled-list warning">
+            <li>Over 1 million seabirds die annually from plastic ingestion or entanglement</li>
+            <li>100,000+ marine mammals killed by plastic pollution each year</li>
+            <li>Microplastics found in 700+ marine species, including those we eat</li>
+            <li>Coral reefs smothered by plastic debris, reducing photosynthesis by up to 40%</li>
+            <li>Ghost fishing nets trap and kill millions of fish, turtles, and dolphins annually</li>
+          </ul>
+        </div>
+        <div>
+          <h3>&#128100; Human Health Risks</h3>
+          <ul class="styled-list warning">
+            <li>Microplastics detected in human blood, lungs, brain tissue, and placentas</li>
+            <li>BPA and phthalates from plastics disrupt hormones and reproductive health</li>
+            <li>Burning plastic releases toxic dioxins linked to cancer and immune disorders</li>
+            <li>Contaminated seafood exposes millions of people to plastic-borne toxins daily</li>
+            <li>Average person consumes ~5 grams of microplastics per week (a credit card&rsquo;s worth)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="img-grid" style="margin-top: 2.5rem;">
+        <div class="img-container">
+          <img src="https://images.unsplash.com/photo-1500829243541-74b677fecc30?w=600" alt="Sea turtle tangled in plastic waste" loading="lazy" />
+          <p class="img-caption">Marine animals frequently become entangled in discarded plastic.</p>
+        </div>
+        <div class="img-container">
+          <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?w=600" alt="Ocean plastic pollution from above" loading="lazy" />
+          <p class="img-caption">Aerial views reveal the scale of plastic accumulation in ocean gyres.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section>
+      <div class="section-header">
+        <span class="section-label">Multimedia</span>
+        <h2>See the Impact Firsthand</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="two-col">
+        <div class="media-section">
+          <h3>&#127909; Plastic Pollution: Expert Insights</h3>
+          <p>
+            In this TEDx talk, a biology professor explains the growing problem of plastic pollution and its impact on ecosystems and life on Earth. The talk highlights how plastic persists in the environment, affects biodiversity, and why urgent action, awareness, and sustainable solutions are essential to protect our planet’s future and environmental balance.
+          </p>
+          <video controls poster="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800">
+            <source src="media/ocean-plastic.mp4" type="video/mp4" />
+            <source src="media/ocean-plastic.webm" type="video/webm" />
+            <p>
+              Your browser does not support HTML5 video.
+              <a href="https://www.youtube.com/watch?v=HQTUWK7CM-Y" target="_blank" rel="noopener">
+                Watch on YouTube
+              </a>
+            </p>
+          </video>
+        </div>
+
+        <div class="media-section">
+          <h3>&#127911; Audio: Expert Interview</h3>
+          <p>
+            Biologists in Rio de Janeiro studying the presence of microplastics in marine life off the coast of Brazil's postcard city have found that the impact of plastic pollution is far worse than they had feared.
+          </p>
+          <audio controls>
+            <source src="media/plastic-expert.mp3" type="audio/mpeg" />
+            <source src="media/plastic-expert.ogg" type="audio/ogg" />
+            <p>
+              Your browser does not support HTML5 audio.
+              <a href="media/plastic-expert.mp3">Download the audio file</a>.
+            </p>
+          </audio>
+          <p style="margin-top:1.5rem; font-size:0.9rem; color:rgba(255,255,255,0.6);">
+            &#9432; If audio/video files are unavailable in your local setup, the HTML elements are
+            fully configured to accept <code>mp4/mp3/ogg/webm</code> media files placed in the
+            <code>media/</code> folder.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT YOU CAN DO (preview) -->
+    <section style="text-align:center; padding-bottom: 5rem;">
+      <div class="section-header">
+        <span class="section-label">Take Action</span>
+        <h2>Solutions Are Within Reach</h2>
+        <div class="section-divider"></div>
+      </div>
+      <p style="color:rgba(255,255,255,0.75); max-width:560px; margin: 0 auto 2.5rem;">
+        From policy change to personal habits, discover how individuals, businesses,
+        and governments are combating the plastic crisis.
+      </p>
+      <a href="solutions.html" class="btn btn-primary" style="margin: 0 auto;">
+        &#8594; Explore All Solutions
+      </a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" style="font-size:1.1rem;">
+            <div class="logo-icon" style="width:32px;height:32px;font-size:1rem;">&#9875;</div>
+            PlasticFree Earth
+          </a>
+          <p>
+            An educational resource dedicated to raising awareness about plastic pollution
+            and empowering people to be part of the solution.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="contact.html">Get Involved</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="index.html#problem">The Crisis</a></li>
+            <li><a href="index.html#statistics">Statistics</a></li>
+            <li><a href="index.html#impact">Health Impact</a></li>
+            <li><a href="solutions.html#individual">Individual Action</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#survey">Take Survey</a></li>
+            <li><a href="contact.html#newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 PlasticFree Earth &mdash; Educational Project. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById('main-nav');
+      nav.classList.toggle('open');
+    }
+
+    // Range slider live value
+    document.querySelectorAll('input[type="range"]').forEach(function(range) {
+      const display = range.parentElement.querySelector('.range-value');
+      if (display) {
+        display.textContent = range.value;
+        range.addEventListener('input', function() {
+          display.textContent = this.value;
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get involved in the fight against plastic pollution. Share your views, pledge to reduce your plastic use, and connect with our community." />
+  <title>Get Involved &mdash; PlasticFree Earth</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <div class="logo-icon">&#9875;</div>
+        PlasticFree Earth
+      </a>
+
+      <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown">
+            <a href="index.html#problem">The Problem</a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#problem">Overview</a></li>
+              <li><a href="index.html#statistics">Key Statistics</a></li>
+              <li><a href="index.html#types">Types of Plastic</a></li>
+              <li><a href="index.html#impact">Environmental Impact</a></li>
+            </ul>
+          </li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="contact.html" class="active">Get Involved</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section style="background: linear-gradient(180deg, rgba(10,22,40,1) 0%, rgba(13,43,78,0.3) 100%); padding: 6rem 2rem 4rem; text-align:center;">
+    <div style="max-width:700px; margin:0 auto;">
+      <span class="section-label">&#9997; Your Voice Matters</span>
+      <h1 style="color:var(--white); margin:1rem 0;">Get Involved &amp;<br/><span style="color:var(--teal-bright);">Make a Difference</span></h1>
+      <p style="color:rgba(255,255,255,0.75); font-size:1.1rem;">
+        Share your experiences, pledge to reduce plastic, and join a global community
+        committed to a cleaner, healthier planet.
+      </p>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- WAYS TO GET INVOLVED -->
+    <section>
+      <div class="section-header">
+        <span class="section-label">How to Help</span>
+        <h2>Ways to Take Action</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <span class="card-icon">&#128221;</span>
+          <h3>Take the Survey</h3>
+          <p>Share your plastic habits and views on pollution. Your data helps researchers and
+          policymakers understand community awareness and needs.</p>
+          <a href="#survey" class="btn btn-outline" style="margin-top:1rem; display:inline-block; padding:0.5rem 1.25rem;">
+            Jump to Survey &darr;
+          </a>
+        </article>
+        <article class="card">
+          <span class="card-icon">&#128241;</span>
+          <h3>Spread the Word</h3>
+          <p>Share this website with friends, family, and colleagues. Awareness is the first
+          step toward meaningful change. Every conversation counts.</p>
+        </article>
+        <article class="card">
+          <span class="card-icon">&#127931;</span>
+          <h3>Organize a Cleanup</h3>
+          <p>Join or organize a local beach, park, or neighbourhood cleanup. Thousands of
+          community cleanups happen worldwide every weekend &mdash; search for one near you.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SURVEY / CONTACT FORM -->
+    <section id="survey">
+      <div class="section-header">
+        <span class="section-label">&#128203; Survey &amp; Feedback</span>
+        <h2>Plastic Pollution Awareness Survey</h2>
+        <div class="section-divider"></div>
+        <p style="color:rgba(255,255,255,0.65); max-width:560px; margin:1.5rem auto 0;">
+          Help us understand community awareness and habits around plastic use.
+          This survey takes approximately 3&ndash;5 minutes to complete.
+        </p>
+      </div>
+
+      <div class="form-container">
+        <p class="required-note">Fields marked <span>*</span> are required</p>
+
+        <form action="#" method="post" novalidate>
+
+          <!-- SECTION 1: Personal Info -->
+          <fieldset style="border:1px solid rgba(0,180,216,0.2); border-radius:8px; padding:1.75rem; margin-bottom:2rem;">
+            <legend style="color:var(--teal-bright); font-weight:700; padding:0 0.5rem; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.06em;">
+              &#128100; Section 1 &mdash; About You
+            </legend>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="first-name">First Name <span style="color:var(--coral)">*</span></label>
+                <input type="text" id="first-name" name="first_name" placeholder="e.g. Alex"
+                  required minlength="2" maxlength="50" autocomplete="given-name" />
+              </div>
+
+              <div class="form-group">
+                <label for="last-name">Last Name <span style="color:var(--coral)">*</span></label>
+                <input type="text" id="last-name" name="last_name" placeholder="e.g. Smith"
+                  required minlength="2" maxlength="50" autocomplete="family-name" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span style="color:var(--coral)">*</span></label>
+                <input type="email" id="email" name="email" placeholder="you@example.com"
+                  required autocomplete="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number (optional)</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000"
+                  pattern="[\+]?[0-9\s\-\(\)]{7,20}" autocomplete="tel" />
+              </div>
+
+              <div class="form-group">
+                <label for="age">Age Group <span style="color:var(--coral)">*</span></label>
+                <select id="age" name="age_group" required>
+                  <option value="" disabled selected>Select your age group</option>
+                  <option value="under18">Under 18</option>
+                  <option value="18-24">18 &ndash; 24</option>
+                  <option value="25-34">25 &ndash; 34</option>
+                  <option value="35-44">35 &ndash; 44</option>
+                  <option value="45-54">45 &ndash; 54</option>
+                  <option value="55-64">55 &ndash; 64</option>
+                  <option value="65plus">65 or older</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="country">Country <span style="color:var(--coral)">*</span></label>
+                <select id="country" name="country" required>
+                  <option value="" disabled selected>Select your country</option>
+                  <option value="us">United States</option>
+                  <option value="uk">United Kingdom</option>
+                  <option value="ca">Canada</option>
+                  <option value="au">Australia</option>
+                  <option value="in">India</option>
+                  <option value="de">Germany</option>
+                  <option value="fr">France</option>
+                  <option value="br">Brazil</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- SECTION 2: Habits -->
+          <fieldset style="border:1px solid rgba(0,180,216,0.2); border-radius:8px; padding:1.75rem; margin-bottom:2rem;">
+            <legend style="color:var(--teal-bright); font-weight:700; padding:0 0.5rem; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.06em;">
+              &#9851; Section 2 &mdash; Your Plastic Habits
+            </legend>
+
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label>How often do you use single-use plastics? <span style="color:var(--coral)">*</span></label>
+                <div class="radio-group">
+                  <label>
+                    <input type="radio" name="single_use_frequency" value="daily" required />
+                    Daily
+                  </label>
+                  <label>
+                    <input type="radio" name="single_use_frequency" value="weekly" />
+                    A few times a week
+                  </label>
+                  <label>
+                    <input type="radio" name="single_use_frequency" value="monthly" />
+                    Occasionally
+                  </label>
+                  <label>
+                    <input type="radio" name="single_use_frequency" value="rarely" />
+                    Rarely / Never
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group full-width">
+                <label>Which plastic-free alternatives do you already use? (select all that apply)</label>
+                <div class="checkbox-group">
+                  <label>
+                    <input type="checkbox" name="alternatives" value="reusable_bags" />
+                    Reusable bags
+                  </label>
+                  <label>
+                    <input type="checkbox" name="alternatives" value="reusable_bottle" />
+                    Reusable water bottle
+                  </label>
+                  <label>
+                    <input type="checkbox" name="alternatives" value="reusable_cup" />
+                    Reusable coffee cup
+                  </label>
+                  <label>
+                    <input type="checkbox" name="alternatives" value="bamboo" />
+                    Bamboo products
+                  </label>
+                  <label>
+                    <input type="checkbox" name="alternatives" value="bar_soap" />
+                    Bar soap / shampoo
+                  </label>
+                  <label>
+                    <input type="checkbox" name="alternatives" value="none" />
+                    None yet
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="plastic-score">
+                  On a scale of 1&ndash;10, how concerned are you about plastic pollution?
+                  <span style="color:var(--coral)">*</span>
+                </label>
+                <div class="range-wrapper">
+                  <span style="color:rgba(255,255,255,0.5); font-size:0.85rem;">Not concerned</span>
+                  <input type="range" id="plastic-score" name="concern_level"
+                    min="1" max="10" value="7" required />
+                  <span style="color:rgba(255,255,255,0.5); font-size:0.85rem;">Very concerned</span>
+                  <span class="range-value">7</span>
+                </div>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="last-cleanup">When did you last participate in an environmental cleanup?</label>
+                <input type="date" id="last-cleanup" name="last_cleanup"
+                  max="2024-12-31" />
+              </div>
+
+              <div class="form-group">
+                <label for="bags-per-week">Approx. plastic bags used per week</label>
+                <input type="number" id="bags-per-week" name="bags_per_week"
+                  min="0" max="100" step="1" placeholder="e.g. 5" />
+              </div>
+
+              <div class="form-group">
+                <label for="bottles-per-week">Approx. plastic bottles used per week</label>
+                <input type="number" id="bottles-per-week" name="bottles_per_week"
+                  min="0" max="100" step="1" placeholder="e.g. 3" />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- SECTION 3: Opinions -->
+          <fieldset style="border:1px solid rgba(0,180,216,0.2); border-radius:8px; padding:1.75rem; margin-bottom:2rem;">
+            <legend style="color:var(--teal-bright); font-weight:700; padding:0 0.5rem; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.06em;">
+              &#128172; Section 3 &mdash; Your Opinions
+            </legend>
+
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label for="biggest-problem">What do you think is the biggest source of plastic pollution?
+                  <span style="color:var(--coral)">*</span>
+                </label>
+                <select id="biggest-problem" name="biggest_problem" required>
+                  <option value="" disabled selected>Choose one</option>
+                  <option value="packaging">Product packaging</option>
+                  <option value="food_service">Food service &amp; takeaway containers</option>
+                  <option value="fishing">Fishing industry</option>
+                  <option value="littering">Individual littering</option>
+                  <option value="industrial">Industrial waste</option>
+                  <option value="microplastics">Synthetic textiles &amp; microplastics</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width">
+                <label>Who should be MOST responsible for solving plastic pollution?</label>
+                <div class="radio-group">
+                  <label>
+                    <input type="radio" name="responsibility" value="individuals" />
+                    Individuals
+                  </label>
+                  <label>
+                    <input type="radio" name="responsibility" value="corporations" />
+                    Corporations
+                  </label>
+                  <label>
+                    <input type="radio" name="responsibility" value="governments" />
+                    Governments
+                  </label>
+                  <label>
+                    <input type="radio" name="responsibility" value="all" />
+                    All equally
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="website-url">Do you have a blog or website about sustainability? (optional)</label>
+                <input type="url" id="website-url" name="website_url"
+                  placeholder="https://yourblog.com" />
+              </div>
+
+              <div class="form-group full-width">
+                <label for="message">Your message, pledge, or suggestions <span style="color:var(--coral)">*</span></label>
+                <textarea id="message" name="message" rows="5"
+                  placeholder="Share your thoughts, a personal plastic-free pledge, or suggestions for our campaign..."
+                  required minlength="20" maxlength="2000"></textarea>
+                <small style="color:rgba(255,255,255,0.4); font-size:0.8rem;">Minimum 20 characters. Maximum 2,000 characters.</small>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- NEWSLETTER & CONSENT -->
+          <div class="form-group" style="margin-bottom:1.5rem;">
+            <div class="checkbox-group">
+              <label style="font-size:0.95rem; text-transform:none; font-weight:400; color:rgba(255,255,255,0.8);">
+                <input type="checkbox" name="newsletter" value="yes" id="newsletter" />
+                Yes, I&rsquo;d like to receive monthly updates on plastic pollution news and campaigns.
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom:2rem;">
+            <div class="checkbox-group">
+              <label style="font-size:0.95rem; text-transform:none; font-weight:400; color:rgba(255,255,255,0.8);">
+                <input type="checkbox" name="consent" value="yes" required />
+                <span>
+                  I agree that my responses may be used for educational and research purposes.
+                  <span style="color:var(--coral)">*</span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn-submit">&#128640; Submit Survey</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTACT INFO -->
+    <section id="contact" style="padding-bottom:5rem;">
+      <div class="section-header">
+        <span class="section-label">Contact</span>
+        <h2>Reach Out to Us</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="two-col" style="max-width:800px; margin:0 auto;">
+        <div>
+          <h3 style="color:var(--teal-bright); margin-bottom:1rem;">&#128140; Contact Information</h3>
+          <ul class="styled-list">
+            <li><strong>Email:</strong> hello&#64;plasticfreeearth.org</li>
+            <li><strong>Phone:</strong> &#43;1 (800) 555&#8209;0199</li>
+            <li><strong>Address:</strong> 123 Ocean Way, Marine City, CA 90210</li>
+            <li><strong>Office Hours:</strong> Mon&ndash;Fri, 9:00&nbsp;AM&ndash;5:00&nbsp;PM PST</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="color:var(--teal-bright); margin-bottom:1rem;">&#128279; Connect Online</h3>
+          <ul class="styled-list">
+            <li>Follow us on social media &#64;PlasticFreeEarth</li>
+            <li>Join our newsletter for monthly updates</li>
+            <li>Subscribe to our YouTube channel for documentary content</li>
+            <li>Partner with us for corporate sustainability programs</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-box success" style="max-width:800px; margin:2rem auto 0;">
+        <strong>&#127775; Together We&rsquo;re Stronger:</strong> Over <strong>42,000 people</strong> have
+        already pledged to reduce their plastic use through our campaign. Every individual action
+        adds up &mdash; your voice and your choices genuinely matter.
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="site-logo" style="font-size:1.1rem;">
+            <div class="logo-icon" style="width:32px;height:32px;font-size:1rem;">&#9875;</div>
+            PlasticFree Earth
+          </a>
+          <p>An educational resource dedicated to raising awareness about plastic pollution and empowering people to be part of the solution.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="contact.html">Get Involved</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>The Problem</h4>
+          <ul>
+            <li><a href="index.html#problem">Overview</a></li>
+            <li><a href="index.html#statistics">Statistics</a></li>
+            <li><a href="index.html#impact">Health Impact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <ul>
+            <li><a href="#survey">Take Survey</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 PlasticFree Earth &mdash; Educational Project. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById('main-nav');
+      nav.classList.toggle('open');
+    }
+
+    // Range slider live display
+    const rangeInput = document.getElementById('plastic-score');
+    const rangeDisplay = rangeInput.parentElement.querySelector('.range-value');
+    rangeDisplay.textContent = rangeInput.value;
+    rangeInput.addEventListener('input', function() {
+      rangeDisplay.textContent = this.value;
+    });
+
+    // Form submission handler
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = document.querySelector('.btn-submit');
+      btn.textContent = '✓ Survey Submitted! Thank you.';
+      btn.style.background = 'linear-gradient(135deg, #2dc653, #1a7a3a)';
+      btn.disabled = true;
+    });
+  </script>
+
+</body>
+</html>
